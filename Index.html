@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Digital Clock</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Background layers -->
+  <div class="bg"></div>
+  <div class="stars"></div>
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+
+  <!-- Main card -->
+  <div class="wrapper">
+    <div class="card">
+
+      <div class="label">⏱ Live Clock</div>
+
+      <div class="time-wrap">
+        <div class="time-block">
+          <span class="hms" id="hours">00</span>
+          <span class="unit-label">HR</span>
+        </div>
+        <span class="colon">:</span>
+        <div class="time-block">
+          <span class="hms" id="mins">00</span>
+          <span class="unit-label">MIN</span>
+        </div>
+        <span class="colon">:</span>
+        <div class="time-block">
+          <span class="hms" id="secs">00</span>
+          <span class="unit-label">SEC</span>
+        </div>
+        <span class="ampm-badge" id="ampm">AM</span>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="date-row">
+        <span class="date-text" id="date-text">—</span>
+        <span class="day-badge" id="day-text">—</span>
+      </div>
+
+      <div class="prog-wrap">
+        <div class="prog-label">Seconds Progress</div>
+        <div class="prog-track">
+          <div class="prog-fill" id="sec-bar"></div>
+        </div>
+      </div>
+
+      <div class="tz-row" id="tz-row">—</div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
